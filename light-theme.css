@@ -1,0 +1,57 @@
+.light {
+    --primary: #FBFBFB;
+    --gray: #dadada;
+    --accent: #F74804;
+
+    --font-primary: #020202;
+    --font-muted: #0F0F0F;
+    --font-inverted: #FBFBFB;
+
+    --font-family: 'Inter', sans-serif;
+}
+
+.furn {
+    --primary: #FCF3E4;
+    --gray: #F6E5C8;
+    --accent: #EB6039;
+
+    --font-primary: #EB6039;
+    --font-muted: #0F0F0F;
+    --font-inverted: #FCF3E4;
+}
+
+.bone {
+    --primary: #F9F6EE;
+    --gray: #EDE6D6;
+    --accent: #39429D;
+
+    --font-primary: #39429D;
+    --font-muted: #585b7a;
+    --font-inverted: #F9F6EE;
+
+    --font-family: 'Times New Roman';
+}
+
+.matcha {
+    --primary: #F0EBE2;
+    --gray: #C3CFB5;
+    --accent: #84B54A;
+
+    --font-primary: #84B54A;
+    --font-muted: #0F0F0F;
+    --font-inverted: #F0EBE2;
+
+    --font-family: 'Georgia', serif;
+}
+
+.bnw-light {
+    --primary: #f3f3f3;
+    --gray: #cfcfcf;
+    --accent: #000000;
+
+    --font-primary: #000000;
+    --font-muted: #0F0F0F;
+    --font-inverted: #E0E0E0;
+
+    --font-family: 'Inter', sans-serif;
+}

@@ -1,0 +1,55 @@
+.dark {
+    --primary: #020202;
+    --gray: #181818;
+    --accent: #F74804;
+
+    --font-primary: #E0E0E0;
+    --font-muted: #BCBCBC;
+    --font-inverted: #020202;
+
+    --font-family: 'Inter', sans-serif;
+}
+
+.linear {
+    --primary: #020519;
+    --gray: #17192B;
+    --accent: #606ACB;
+
+    --font-primary: #EDF0F8;
+    --font-muted: #8A8F98;
+    --font-inverted: #020519;
+
+    --font-family: 'Inter', sans-serif;
+}
+
+.nexus {
+    --primary: #040102;
+    --gray: #2d0915;
+    --accent: #CD364C;
+
+    --font-primary: #EDF0F8;
+    --font-muted: #BCBCBC;
+    --font-inverted: #040102;
+
+    --font-family: 'Inter', sans-serif;
+}
+
+.baselime {
+    --primary: #131416;
+    --gray: #222326;
+    --accent: #B6E65E;
+
+    --font-primary: #E0E0E0;
+    --font-muted: #BCBCBC;
+    --font-inverted: #131416;
+}
+
+.bnw {
+    --primary: #020202;
+    --gray: #1A1A1A;
+    --accent: #E0E0E0;
+
+    --font-primary: #E0E0E0;
+    --font-muted: #BCBCBC;
+    --font-inverted: #000000;
+}

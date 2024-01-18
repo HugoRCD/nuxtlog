@@ -1,7 +1,9 @@
 <template>
-  <Html>
-    <Body class="relative bg-zinc-100 dark:bg-zinc-900 text-zinc-900 dark:text-zinc-100">
+  <Html lang="en">
+    <Body class="bg-primary selection:bg-accent selection:text-inverted">
+    <NuxtLayout>
       <NuxtPage />
+    </NuxtLayout>
     </Body>
   </Html>
 </template>
