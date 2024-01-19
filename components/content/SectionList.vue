@@ -2,16 +2,12 @@
 import type {PropType} from "vue";
 
 const props = defineProps({
-  icon: {
-    type: String,
-    required: false,
-  },
   isIcon: {
     type: Boolean,
     default: false,
   },
   type: {
-    type: String as PropType<"features" | "bugs" | "improvements">,
+    type: String as PropType<"features" | "bugs" | "improvements" | "refactor">,
     default: "feature",
   },
   items: {
@@ -23,11 +19,13 @@ const props = defineProps({
 const iconClass = computed(() => {
   switch (props.type) {
     case "features":
-      return `${props.icon || "i-heroicons-sparkles"}`;
+      return "i-heroicons-sparkles";
     case "bugs":
-      return `${props.icon || "i-lucide-bug"}`;
+      return "i-lucide-bug";
     case "improvements":
-      return `${props.icon || "i-lucide-tools"}`;
+      return "i-lucide-lightbulb";
+    case "refactor":
+      return "i-lucide-wrench";
   }
 });
 
