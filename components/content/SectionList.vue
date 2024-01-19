@@ -4,7 +4,11 @@ import type {PropType} from "vue";
 const props = defineProps({
   icon: {
     type: String,
-    default: "i-heroicons-sparkles",
+    required: false,
+  },
+  isIcon: {
+    type: Boolean,
+    default: false,
   },
   type: {
     type: String as PropType<"features" | "bugs" | "improvements">,
@@ -34,6 +38,7 @@ const capitalize = (str: string) => str.charAt(0).toUpperCase() + str.slice(1);
   <div class="flex flex-col gap-2 my-10">
     <div class="flex items-center gap-2">
       <i
+        v-if="isIcon"
         :class="iconClass"
         class="text-xl text-accent"
       />

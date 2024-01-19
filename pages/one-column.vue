@@ -1,4 +1,8 @@
 <script setup lang="ts">
+definePageMeta({
+  path: "/",
+})
+
 const { data } = await useAsyncData("feed", () =>
     queryContent("/posts").sort({ date: -1 }).find()
 );
@@ -7,7 +11,6 @@ const { data } = await useAsyncData("feed", () =>
 <template>
   <div>
     <Hero />
-    <ThemeSelector />
     <section
       class="relative mx-auto max-w-5xl px-4 sm:px-6 lg:px-8"
     >

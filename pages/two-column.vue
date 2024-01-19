@@ -2,9 +2,7 @@
 </script>
 
 <template>
-  <div>
-    <slot />
-  </div>
+  <div />
 </template>
 
 <style scoped lang="scss">

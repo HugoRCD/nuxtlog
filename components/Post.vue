@@ -1,8 +1,7 @@
 <template>
   <article
     :id="`v${content.version}`"
-    class="md:flex cursor-pointer"
-    @click="$router.push(content._path)"
+    class="md:flex"
   >
     <h2 class="pl-7 text-xs sm:text-sm leading-6 text-accent md:w-1/4 md:pl-0 md:pr-12 md:text-right h-full">
       <Badge
