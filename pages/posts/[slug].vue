@@ -12,7 +12,7 @@ console.log(data)
 
 <template>
   <section
-      class="relative mx-auto max-w-3xl px-4 sm:px-6 lg:px-8"
+    class="relative mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 post"
   >
     <h1 class="text-xl font-main sm:text-3xl font-bold text-primary">
       {{ data.title }}
@@ -21,6 +21,6 @@ console.log(data)
   </section>
 </template>
 
-<style scoped lang="scss">
+<style scoped>
 
 </style>

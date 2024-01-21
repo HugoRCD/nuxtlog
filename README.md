@@ -11,12 +11,10 @@ Give your project a beautiful changelog in seconds, powered by Nuxt Content, Nux
 - [x] Add support for inline code blocks
 - [ ] Add native components:
   - [ ] Alert
-  - [ ] Badge
-  - [ ] Link
+  - [x] Badge
   - [ ] Button
   - [ ] Image
-  - [ ] List
-  - [ ] Copy update url
+  - [ ] Copy post url
   - [ ] Search
 - [ ] Add multi layout support
     - [ ] One column
