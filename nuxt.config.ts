@@ -17,7 +17,7 @@ export default defineNuxtConfig({
     },
   },
 
-  modules: ['fastnuxt', '@nuxt/content'],
+  modules: ['blanked', '@nuxt/content'],
 
   css: ['~/main.css', '~/light-theme.css', '~/dark-theme.css'],
 
