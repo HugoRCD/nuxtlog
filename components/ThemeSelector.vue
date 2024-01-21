@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const themes = ['light', 'dark', 'linear', 'nexus', 'baselime', 'furn', 'bone', 'matcha', 'bnw', 'bnw-light'];
+const themes = ['dark', 'linear', 'nexus', 'baselime', 'furn', 'bone', 'matcha', 'bnw', 'bnw-light'];
 
 const open = ref(false);
 

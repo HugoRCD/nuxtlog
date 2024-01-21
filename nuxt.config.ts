@@ -23,8 +23,8 @@ export default defineNuxtConfig({
 
   colorMode: {
     storageKey: 'nuxtlog-color-mode',
-    preference: "dark",
-    fallback: "dark",
+    preference: "bnw",
+    fallback: "bnw",
   },
 
   routeRules: {

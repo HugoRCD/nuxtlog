@@ -1,15 +1,3 @@
-.light {
-    --primary: #FBFBFB;
-    --gray: #dadada;
-    --accent: #F74804;
-
-    --font-primary: #020202;
-    --font-muted: #0F0F0F;
-    --font-inverted: #FBFBFB;
-
-    --font-family: 'Inter', sans-serif;
-}
-
 .furn {
     --primary: #FCF3E4;
     --gray: #F6E5C8;

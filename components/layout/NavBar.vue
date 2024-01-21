@@ -14,6 +14,11 @@ const nav = [
     name: "Two Column",
     path: "/two-column",
     icon: "i-lucide-columns",
+  },
+  {
+    name: "List",
+    path: "/list",
+    icon: "i-lucide-list",
   }
 ]
 </script>
@@ -29,7 +34,7 @@ const nav = [
     >
       <i
         :class="item.icon"
-        class="text-xl text-accent"
+        class="text-xs sm:text-xl text-accent"
       />
       {{ item.name }}
     </NuxtLink>
