@@ -28,5 +28,3 @@ Give your project a beautiful changelog in seconds, powered by Nuxt Content, Nux
 - [ ] Auto generate open graph image
 - [ ] SEO optimization
 - [x] Add support for multiple authors
-
-Maybe the latest item can pulse

@@ -1,6 +1,6 @@
 <template>
   <Html lang="en">
-    <Body class="bg-primary selection:bg-accent selection:text-inverted">
+    <Body class="bg-primary selection:bg-accent selection:text-primary">
       <NuxtLayout>
         <NuxtPage />
       </NuxtLayout>
