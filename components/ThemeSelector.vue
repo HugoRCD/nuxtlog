@@ -1,7 +1,7 @@
 <script setup lang="ts">
 const themes = ['light', 'dark', 'linear', 'nexus', 'baselime', 'furn', 'bone', 'matcha', 'bnw', 'bnw-light'];
 
-const open = ref(true);
+const open = ref(false);
 
 const capitalize = (str: string) => str.charAt(0).toUpperCase() + str.slice(1);
 </script>

@@ -6,9 +6,9 @@ const { data } = await useAsyncData("feed", () =>
 
 <template>
   <div class="sm:h-screen flex relative flex-col sm:flex-row sm:overflow-hidden">
-    <Hero class="sm:w-1/2 w-full" />
+    <Hero class="w-full sm:w-1/2" />
     <section
-      class="mx-auto px-4 sm:px-6 lg:px-8 sm:w-1/2 overflow-y-auto"
+      class="w-full mx-auto px-4 sm:px-6 lg:px-8 overflow-y-auto sm:w-1/2"
     >
       <Post
         v-for="(post, index) in data"
