@@ -1,6 +1,6 @@
 <template>
   <div class="relative overflow-hidden bg-gradient-to-b from-gray flex flex-col justify-center items-center w-full">
-    <div class="absolute bg-accent size-[1000px] rounded-full blur-[200px] opacity-50 bottom-0 left-1/2 transform translate-x-[-50%] translate-y-[95%]" />
+    <div class="absolute bg-accent size-[1000px] rounded-full blur-[100px] opacity-30 bottom-0 left-1/2 transform translate-x-[-50%] translate-y-[90%]" />
     <div class="mx-auto max-w-2xl text-center flex flex-col justify-center h-96 px-4 sm:px-6 lg:px-8 z-10">
       <h1
         class="text-primary

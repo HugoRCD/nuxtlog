@@ -44,7 +44,7 @@ html, body, #__nuxt {
 
 [data-animate] {
     --stagger: 0;
-    --delay: 180ms;
+    --delay: 230ms;
 
     --start: 0ms;
 }
