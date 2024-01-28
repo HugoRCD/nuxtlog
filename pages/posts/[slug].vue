@@ -1,26 +1,20 @@
 <script setup lang="ts">
-const { path } = useRoute();
-const { data } = await useAsyncData("feed", () =>
-    queryContent("/posts").where({
-      _path: {
-        $eq: path,
-      },
-    }).findOne(),
-);
-console.log(data)
 </script>
 
 <template>
   <section
-    class="relative mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 post"
+    class="post mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 pt-32 pb-16"
   >
-    <h1 class="text-xl font-main sm:text-3xl font-bold text-primary">
-      {{ data.title }}
-    </h1>
+    <div>
+      <NuxtLink
+        to="/list"
+        class="text-primary text-lg flex items-center gap-2 cursor-pointer"
+      >
+        <span class="i-lucide-arrow-left text-primary text-2xl cursor-pointer" />
+        <span class="ml-2">Go back</span>
+      </Nuxtlink>
+    </div>
     <ContentDoc />
   </section>
 </template>
 
-<style scoped>
-
-</style>

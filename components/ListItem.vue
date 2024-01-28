@@ -11,14 +11,10 @@ defineProps({
 </script>
 
 <template>
-  <div class="relative flex flex-col gap-1 cursor-pointer">
-    <!--    <div class="absolute top-1 right-1">
-      <Badge
-        v-if="content.version"
-        :label="`v${content.version}`"
-        class="mb-2"
-      />
-    </div>-->
+  <NuxtLink
+    :to="content._path"
+    class="relative flex flex-col gap-1 cursor-pointer"
+  >
     <div class="overflow-hidden rounded-md">
       <img
         :src="content.image"
@@ -30,7 +26,7 @@ defineProps({
       <h1 class="text-xl font-main sm:text-2xl font-bold text-primary">
         {{ content.title }}
       </h1>
-      <span class="i-lucide-link text-primary text-lg hover:text-accent cursor-pointer" />
+      <CopyLink :path="content._path" />
     </div>
     <span class="block text-muted text-sm">
       {{ new Date(content.date).toLocaleDateString("en-US", {
@@ -39,7 +35,7 @@ defineProps({
         year: "numeric",
       }) }}
     </span>
-  </div>
+  </NuxtLink>
 </template>
 
 <style scoped lang="scss">

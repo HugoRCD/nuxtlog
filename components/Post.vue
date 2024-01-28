@@ -26,7 +26,7 @@ defineProps({
       <h1 class="text-xl font-main sm:text-3xl font-bold text-primary">
         {{ content.title }}
       </h1>
-      <span class="i-lucide-link text-primary text-lg hover:text-accent cursor-pointer" />
+      <CopyLink :path="content._path" />
     </div>
     <span class="block text-muted text-sm">
       {{ new Date(content.date).toLocaleDateString("en-US", {
