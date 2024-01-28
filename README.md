@@ -1,6 +1,11 @@
 # NuxtLog
 
-Give your project a beautiful changelog in seconds, powered by Nuxt Content, NuxtLog is a lightweight, free and open source template for your changelog made with [Vue](https://vuejs.com), [Nuxt](https://nuxt.com) and [Tailwindcss](https://tailwindcss.com). It leverages [Nuxt Content](https://content.nuxt.com) for your feed which allows you to write markdown and use them as a CMS. It has a beautiful UI and is easy to use.
+Give your project a beautiful changelog, newsletters, etc... in seconds, powered by Nuxt Content, NuxtLog is a lightweight, free and open source template for your content made with [Vue](https://vuejs.com), [Nuxt](https://nuxt.com) and [Tailwindcss](https://tailwindcss.com). It leverages [Nuxt Content](https://content.nuxt.com) for your feed which allows you to write markdown and use them as a CMS in Nuxt Studio. It has a beautiful UI and is easy to use.
+But most importantly, it embeds the new Resend Broadcast feature, which allows you to send your content to your users by email and keep them up to date with your project.
+
+## Demo
+
+You can see a live demo at [nuxtlog.hrcd.fr](https://nuxtlog.hrcd.fr/).
 
 ## TODO
 
@@ -29,3 +34,46 @@ Give your project a beautiful changelog in seconds, powered by Nuxt Content, Nux
 - [ ] Auto generate open graph image
 - [ ] SEO optimization
 - [x] Add support for multiple authors
+
+## Quick Setup
+
+1. Clone this repository if you have access or download it from the store
+```bash
+git clone git@github.com:HugoRCD/nuxtlog.git
+```
+
+2. Install dependencies
+```bash
+bun install
+```
+
+3. Start development server
+```bash
+bun dev
+```
+
+4. Generate static project
+```bash
+bun generate
+```
+
+5. Start production server
+```bash
+bun start
+```
+
+## Contributing
+
+If you want to contribute to this project, you can fork it and make a pull request. You can also open an issue if you find a bug or have a suggestion.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Credits
+
+- [Hugo RCD](https://github.com/HugoRCD) - Creator and maintainer
+- [Nuxt](https://nuxt.com) - Framework
+- [Nuxt Content](https://content.nuxt.com) - Content management
+- [Tailwindcss](https://tailwindcss.com) - CSS framework
+- [Resend](https://resend.dev) - Email
