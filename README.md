@@ -29,7 +29,8 @@ You can see a live demo at [nuxtlog.hrcd.fr](https://nuxtlog.hrcd.fr/).
     - [x] One column
     - [x] Two column
     - [x] List
-- [ ] Social display and share
+- [x] Social display
+- [ ] Social share
 - [x] Auto generate sitemap.xml
 - [x] Auto generate robots.txt
 - [ ] Auto generate RSS

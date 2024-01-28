@@ -1,4 +1,5 @@
 <script setup lang="ts">
+const { socials } = useAppConfig();
 const email = ref("");
 
 const { status, error, refresh } = useFetch("/api/subscribe", {
@@ -52,6 +53,14 @@ async function loadData() {
           </span>
         </button>
       </form>
+      <div class="flex items-center gap-4 text-primary justify-center mt-4">
+        <NuxtLink
+          v-for="social in socials"
+          :key="social.name"
+          :to="social.url"
+          :class="`${social.icon} size-6 text-2xl text-primary cursor-pointer hover:text-accent transition-colors duration-300`"
+        />
+      </div>
     </div>
   </div>
 </template>
