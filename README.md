@@ -5,6 +5,8 @@ Give your project a beautiful changelog in seconds, powered by Nuxt Content, Nux
 ## TODO
 
 - [x] Content using Nuxt Content
+- [x] Resend send mail
+- [x] Resend broadcast feature
 - [ ] Widget to embed in other website
 - [x] Multi theme
 - [x] Add support for code syntax highlighting
@@ -14,14 +16,15 @@ Give your project a beautiful changelog in seconds, powered by Nuxt Content, Nux
   - [x] Badge
   - [ ] Button
   - [ ] Image
-  - [ ] Copy post url
+  - [x] Copy post url
   - [ ] Search
-- [ ] Add multi layout support
-    - [ ] One column
-    - [ ] Two column
+- [x] Add multi layout support
+    - [x] One column
+    - [x] Two column
+    - [x] List
 - [ ] Social display and share
-- [ ] Auto generate sitemap.xml
-- [ ] Auto generate robots.txt
+- [x] Auto generate sitemap.xml
+- [x] Auto generate robots.txt
 - [ ] Auto generate RSS
 - [ ] Auto generate open graph image
 - [ ] SEO optimization
