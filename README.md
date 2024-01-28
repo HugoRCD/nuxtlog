@@ -1,3 +1,5 @@
+![social-preview.png](./public/social-preview.png)
+
 # NuxtLog
 
 Give your project a beautiful changelog, newsletters, etc... in seconds, powered by Nuxt Content, NuxtLog is a lightweight, free and open source template for your content made with [Vue](https://vuejs.com), [Nuxt](https://nuxt.com) and [Tailwindcss](https://tailwindcss.com). It leverages [Nuxt Content](https://content.nuxt.com) for your feed which allows you to write markdown and use them as a CMS in Nuxt Studio. It has a beautiful UI and is easy to use.

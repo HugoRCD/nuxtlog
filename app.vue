@@ -10,4 +10,13 @@
 </template>
 
 <script setup lang="ts">
+useHead({
+  title: "NuxtLog",
+  meta: [
+    {
+      name: "description",
+      content: "NuxtLog is a changelog, newsletter, etc... built with Nuxt",
+    }
+  ]
+})
 </script>
