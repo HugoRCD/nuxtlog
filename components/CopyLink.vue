@@ -12,7 +12,6 @@ defineProps({
 const copy = ref(false);
 
 async function copyToClipboard(string: string) {
-  console.log("copying", string);
   copy.value = true;
   const input = document.createElement("input");
   input.setAttribute("value", string);
@@ -20,8 +19,8 @@ async function copyToClipboard(string: string) {
   input.select();
   document.execCommand("copy");
   document.body.removeChild(input);
-  await new Promise((resolve) => setTimeout(resolve, 500));
   copy.value = false;
+  toast.success("Copied to clipboard!");
 }
 </script>
 
