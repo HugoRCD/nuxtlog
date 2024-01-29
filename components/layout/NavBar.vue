@@ -29,7 +29,7 @@ const nav = [
       v-for="item in nav"
       :key="item.name"
       :to="item.path"
-      class="text-base font-semibold text-primary hover:text-accent flex items-center gap-2 bg-primary rounded-md px-3 py-1.5 ring-1 ring-inset ring-accent focus:ring-2 focus:ring-accent sm:text-sm sm:leading-6"
+      class="text-xs sm:text-base font-semibold text-primary hover:text-accent flex items-center gap-2 bg-primary rounded-md px-3 py-1.5 ring-1 ring-inset ring-accent focus:ring-2 focus:ring-accent sm:text-sm sm:leading-6"
       :class="{'bg-accent text-inverted': $route.path === item.path}"
     >
       <i
