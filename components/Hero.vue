@@ -13,6 +13,7 @@ async function loadData() {
   await refresh();
   if (!error.value) {
     email.value = "";
+    toast.success("You have been subscribed to the newsletter!");
   }
 }
 </script>

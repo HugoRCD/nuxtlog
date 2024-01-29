@@ -5,6 +5,7 @@
       <NuxtLayout>
         <NuxtPage />
       </NuxtLayout>
+      <Toasts />
     </Body>
   </Html>
 </template>
