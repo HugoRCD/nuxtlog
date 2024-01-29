@@ -5,7 +5,15 @@
       <NuxtLayout>
         <NuxtPage />
       </NuxtLayout>
-      <Toasts />
+      <Toasts
+        :toast-options="{
+          style: {
+            background: 'var(--primary)',
+            borderColor: 'var(--gray)',
+            color: 'var(--font-primary)'
+          },
+        }"
+      />
     </Body>
   </Html>
 </template>
