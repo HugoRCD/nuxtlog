@@ -14,6 +14,7 @@ const { data } = await useAsyncData("feed", () =>
     <section
       class="relative mx-auto max-w-5xl px-4 sm:px-6 lg:px-8"
     >
+      <WidgetSidebar />
       <Post
         v-for="(post, index) in data"
         :key="post.slug"
