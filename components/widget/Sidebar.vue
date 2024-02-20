@@ -1,106 +1,36 @@
 <script setup lang="ts">
-const emit = defineEmits(["close"]);
-const show = ref(false);
-const iframeLoaded = ref(false);
+const open = ref(false);
 
-function close() {
-  show.value = false;
-  setTimeout(() => {
-    document.body.style.removeProperty("overflow");
-    emit("close");
-  }, 500);
-}
-
-const slideOver = ref();
-
-useClickOutside(slideOver, () => close());
-
-onMounted(() => {
-  document.body.style.setProperty("overflow", "hidden");
-});
+const { data } = await useAsyncData("feed", () =>
+    queryContent("/posts").sort({ date: -1 }).find()
+);
 </script>
 
 <template>
-  <div>
-    <span
-      class="i-lucide-feed text-primary text-lg cursor-pointer"
-      @click="show = true"
-    />
-    <div
-      class="relative z-10"
-      aria-labelledby="slide-over-title"
-      role="dialog"
-      aria-modal="true"
-    >
-      <transition
-        enter-active-class="ease-in-out duration-500"
-        enter-from-class="opacity-0"
-        enter-to-class="opacity-100"
-        leave-active-class="ease-in-out duration-500"
-        leave-from-class="opacity-100"
-        leave-to-class="opacity-0"
+  <Sidebar v-model="open">
+    <template #trigger>
+      <span
+        class="fixed top-1/2 sm:top-4 left-4 z-50 px-2 py-1 rounded-md bg-accent text-sm cursor-pointer"
+        @click="open = !open"
       >
-        <div
-          v-if="show"
-          class="fixed inset-0 bg-gray-700 bg-opacity-50 backdrop-blur-sm transition-opacity"
-        />
-      </transition>
-      <div class="fixed inset-0 overflow-hidden">
-        <div class="absolute inset-0 overflow-hidden">
-          <div
-            class="pointer-events-none fixed inset-y-0 right-0 flex max-w-full pl-10"
-          >
-            <transition
-              enter-active-class="transform transition ease-in-out duration-500"
-              enter-from-class="translate-x-full"
-              enter-to-class="translate-x-0"
-              leave-active-class="transform transition ease-in-out duration-500"
-              leave-from-class="translate-x-0"
-              leave-to-class="translate-x-full"
-            >
-              <div
-                v-if="show"
-                ref="slideOver"
-                class="pointer-events-auto w-screen max-w-md relative"
-              >
-                <div
-                  class="absolute top-0 left-0 -ml-8 flex pt-2 pr-2 sm:-ml-10 sm:pr-4"
-                >
-                  <button
-                    type="button"
-                    class="rounded-md text-gray-100 focus:outline-none focus:ring-2 focus:ring-white h-8 w-8 flex items-center justify-center"
-                    @click="close"
-                  >
-                    <span class="sr-only">Close panel</span>
-
-                    <icon
-                      name="fluent:dismiss-24-filled"
-                      class="h-6 w-6"
-                    />
-                  </button>
-                </div>
-                <div class="h-full overflow-y-scroll bg-white shadow-xl">
-                  <!-- The Feed iframe goes here -->
-                  <div
-                    v-if="!iframeLoaded"
-                    class="h-full w-full flex items-center justify-center flex-col space-y-2 text-slate-700"
-                  >
-                    <span class="i-lucide-loader text-primary text-2xl animate-spin" />
-                    <p>Loading Feed</p>
-                  </div>
-                  <iframe
-                    src="/"
-                    class="h-full w-full"
-                    :class="iframeLoaded ? 'opacity-100' : 'opacity-0'"
-                    @load="iframeLoaded = true"
-                  />
-                  <!-- The Feed iframe goes here -->
-                </div>
-              </div>
-            </transition>
-          </div>
-        </div>
+        Open Widget
+      </span>
+    </template>
+    <div class="flex flex-col gap-4 max-w-xs sm:max-w-md bg-primary p-4">
+      <h2 class="text-2xl font-bold text-accent">
+        Latest Posts
+      </h2>
+      <div class="overflow-y-scroll">
+        <Post
+          v-for="(post, index) in data"
+          :key="post.slug"
+          :content="post"
+          data-animate
+          :style="{ '--stagger': index }"
+        >
+          {{ post }}
+        </Post>
       </div>
     </div>
-  </div>
+  </Sidebar>
 </template>
