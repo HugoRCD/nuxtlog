@@ -19,10 +19,7 @@ You can see a live demo at [nuxtlog.hrcd.fr](https://nuxtlog.hrcd.fr/).
 - [x] Add support for code syntax highlighting
 - [x] Add support for inline code blocks
 - [ ] Add native components:
-  - [ ] Alert
   - [x] Badge
-  - [ ] Button
-  - [ ] Image
   - [x] Copy post url
   - [ ] Search
 - [x] Add multi layout support
@@ -30,12 +27,9 @@ You can see a live demo at [nuxtlog.hrcd.fr](https://nuxtlog.hrcd.fr/).
     - [x] Two column
     - [x] List
 - [x] Social display
-- [ ] Social share
 - [x] Auto generate sitemap.xml
 - [x] Auto generate robots.txt
-- [ ] Auto generate RSS
 - [ ] Auto generate open graph image
-- [ ] SEO optimization
 - [x] Add support for multiple authors
 
 ## Quick Setup
