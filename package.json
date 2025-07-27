@@ -16,7 +16,7 @@
     "@nuxt/eslint-config": "^0.7.0",
     "@nuxthq/studio": "^2.0.0",
     "blanked": "latest",
-    "eslint": "^8.56.0",
+    "eslint": "^9.0.0",
     "nuxt": "^3.9.1",
     "resend": "^4.0.0",
     "sitemap": "^8.0.0",
